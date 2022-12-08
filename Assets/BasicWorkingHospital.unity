@@ -342,6 +342,8 @@ MonoBehaviour:
   preConditions:
   - key: Waiting
     value: 1
+  - key: FreeCubicle
+    value: 1
   afterEffects:
   - key: treatPatient
     value: 1
@@ -4454,7 +4456,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3203887786870572470, guid: 0fce119190bf0449caee6a98f2307710, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.25
+      value: -21.3
       objectReference: {fileID: 0}
     - target: {fileID: 3203887786870572470, guid: 0fce119190bf0449caee6a98f2307710, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4462,7 +4464,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3203887786870572470, guid: 0fce119190bf0449caee6a98f2307710, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -6.45
+      value: -48.3
       objectReference: {fileID: 0}
     - target: {fileID: 3203887786870572470, guid: 0fce119190bf0449caee6a98f2307710, type: 3}
       propertyPath: m_LocalRotation.w
