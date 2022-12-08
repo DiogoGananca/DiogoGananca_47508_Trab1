@@ -1,10 +1,10 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class GInventory
 {
-    List<GameObject> items = new List<GameObject> ();
+    List<GameObject> items = new List<GameObject>();
 
     public void AddItem(GameObject i)
     {
@@ -13,9 +13,9 @@ public class GInventory
 
     public GameObject FindItemWithTag(string tag)
     {
-        foreach(GameObject i in items)
+        foreach (GameObject i in items)
         {
-            if(i.tag == tag)
+            if (i.tag == tag)
             {
                 return i;
             }
@@ -26,13 +26,12 @@ public class GInventory
     public void RemoveItem(GameObject i)
     {
         int indexToRemove = -1;
-        foreach(GameObject g in items)
+        foreach (GameObject g in items)
         {
             indexToRemove++;
             if (g == i)
                 break;
         }
-        
         if (indexToRemove >= -1)
             items.RemoveAt(indexToRemove);
     }

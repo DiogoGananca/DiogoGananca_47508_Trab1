@@ -19,7 +19,7 @@ public sealed class GWorld
         foreach (GameObject c in cubes)
             cubicles.Enqueue(c);
 
-        if(cubes.Length > 0)
+        if (cubes.Length > 0)
             world.ModifyState("FreeCubicle", cubes.Length);
     }
 
@@ -34,19 +34,21 @@ public sealed class GWorld
 
     public GameObject RemovePatient()
     {
-        if(patients.Count == 0) return null;
+        if (patients.Count == 0) return null;
         return patients.Dequeue();
     }
-    public void AddCubicles(GameObject p)
+
+    public void AddCubicle(GameObject p)
     {
         cubicles.Enqueue(p);
     }
 
-    public GameObject RemoveCubicles()
+    public GameObject RemoveCubicle()
     {
         if (cubicles.Count == 0) return null;
         return cubicles.Dequeue();
     }
+
     public static GWorld Instance
     {
         get { return instance; }

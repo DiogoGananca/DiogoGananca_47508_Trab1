@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -6,8 +6,6 @@ using UnityEngine.UI;
 public class UpdateWorld : MonoBehaviour
 {
     public Text states;
-    // Start is called before the first frame update
-    
 
     // Update is called once per frame
     void LateUpdate()

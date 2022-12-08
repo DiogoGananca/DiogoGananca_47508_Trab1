@@ -8,10 +8,10 @@ public class GetPatient : GAction
     public override bool PrePerform()
     {
         target = GWorld.Instance.RemovePatient();
-        if(target == null)
+        if (target == null)
             return false;
 
-        resource = GWorld.Instance.RemoveCubicles();
+        resource = GWorld.Instance.RemoveCubicle();
         if (resource != null)
             inventory.AddItem(resource);
         else
@@ -28,7 +28,7 @@ public class GetPatient : GAction
     public override bool PostPerform()
     {
         GWorld.Instance.GetWorld().ModifyState("Waiting", -1);
-        if(target)
+        if (target)
             target.GetComponent<GAgent>().inventory.AddItem(resource);
         return true;
     }
